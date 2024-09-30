@@ -1,0 +1,425 @@
+/* -----@Media Responsive css created by Shahid - Scientech IT -------------------------------------------- */
+
+/* This Media screen css called for All Quality Pages Element---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+	.qua_portfolio-column {
+	position: relative;
+	width: 48%;
+	display: inline-block;
+	margin-bottom:50px;
+	
+	}
+	.qua-team-img{
+	padding-left:25%;
+	padding-right:25%;
+	float:none;
+	}
+	.qua-team-name{
+	text-align:center;
+	}
+	.qua-team-detail{
+	padding-right:15px;
+	padding-left:10px;
+	text-align:center;
+	}
+	.qua-team-social{
+	float: none;
+	text-align:center;
+	}
+	.nav{
+		margin-bottom:30px;
+	}
+	
+	
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
+
+/*Flex Slider Center Alignment*/
+.flex-slider-center { }
+.flex-slider-center h2 {
+    font-size: 55px;
+	line-height: 55px;
+    margin: 0px 15% 12px;
+}
+.flex-slider-center span{ 
+	margin: 0px 0px 12px;
+	padding: 0px 15px 5px 15px;
+    font-size: 55px;
+	line-height: 55px;
+}
+.flex-slider-center p{ 
+	padding: 0px 15px 0px 15px;
+    font-size: 24px;
+	line-height: 30px;
+    margin: 0px 10% 12px;
+}
+.flex_btn {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+	padding: 10px 20px;
+
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.qua_callout_area{
+	width:100%;
+	background-color:#f8504b;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-top:3px solid #e53a35;
+	border-bottom:3px solid #e53a35;
+	text-align:center;
+	}
+	.qua_callout_btn {
+	float: none;
+	
+	}
+	/*Menus Style*/
+	.navbar-toggle{
+		margin-top: 20px;
+	}
+	/*Sidebar Css*/
+	.qua-sidebar {
+		margin: 50px 0 0;
+	}
+/*Flex Slider Center Alignment*/
+.flex-slider-center h2 {
+    font-size: 36px;
+	line-height: 40px;
+    margin: 0px 19% 12px;
+}
+.flex-slider-center span{ 
+	margin: 0px 0px 12px;
+	padding: 0px 15px 5px 15px;
+    font-size: 36px;
+	line-height: 40px;
+}
+.flex-slider-center p{ 
+	padding: 0px 15px 0px 15px;
+    font-size: 18px;
+	line-height: 22px;
+    margin: 0px 10% 12px;
+}
+.flex_btn {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+	padding: 8px 20px;
+
+}
+
+	
+	
+}	
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.head-contact-info {
+	margin: 8px 0 10px;
+	text-align:center;
+	padding: 0px;
+	display: block;
+	float: none;
+	}
+	.head-contact-social{
+	float: none;
+	text-align:center;
+	margin: 0 0  5px;
+	padding: 0px;
+	}
+	.head-contact-social li {
+    height: 28px;
+    width: 28px;
+	}
+	.head-contact-social li > a > i {
+		font-size: 12px;
+		line-height: 1;
+	}
+	.qua_portfolio-column {
+	position: relative;
+	width: 48%;
+	display: inline-block;
+	margin-bottom:50px;
+	
+	}
+	.media-column {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	border-right: 0;
+	border-bottom: 1px solid #e5e5e5;
+	}
+	.qua_portfolio-4col-column {
+	position: relative;
+	width: 48%;
+	display: inline-block;
+	margin-bottom:100px;
+	}
+	
+	.qua_callout_area{
+	width:100%;
+	background-color:#f8504b;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-top:3px solid #e53a35;
+	border-bottom:3px solid #e53a35;
+	text-align:center;
+	}
+	.qua_callout_btn {
+	float: none;
+	}
+/*Homepage Testimonial Pager*/	
+.testi-pager{
+	margin-top: 60px;
+} 
+/*Menus Style*/
+	.navbar-toggle{
+		margin-top: 20px;
+	}
+	.navbar-nav > li:last-child {
+    margin-bottom: 15px;
+    margin-right: 0;
+	}
+	.navbar-nav > li > a {
+    border-radius: 0px;
+	}
+	.navbar-collapse.in {
+    overflow: hidden;
+	}
+	/*Blog Page*/
+	.qua_post_date {
+    margin-bottom: 10px;
+	margin-left: 0;
+    margin-right: 2%;
+	}
+	.qua_post_title_wrapper {
+    width: 100%;
+	}
+	.qua-blog-area .qua-blog-info .qua-blog-date-cm .right {
+	float: right;
+	text-align: right;
+	}
+	/*Sidebar Css*/
+	.qua-sidebar {
+		margin: 50px 0 0;
+	}
+	/*Callout Area */
+	.qua_callout_area {
+    padding: 20px 0;
+	}	
+/*Flex Slider Center Alignment*/
+.flex-slider-center h2 {
+    font-size: 25px;
+	line-height: 30px;
+    margin: 0px 19% 6px;
+}
+.flex-slider-center span{ 
+	margin: 0px 0px 6px;
+	padding: 0px 15px 5px 15px;
+    font-size: 25px;
+	line-height: 30px;
+}
+.flex-slider-center p{ 
+	padding: 0px 10px 0px 10px;
+    font-size: 13px;
+	line-height: 20px;
+    margin: 0px 10% 12px;
+}
+.flex_btn {
+    font-size: 11px;
+    line-height: 20px;
+    margin-bottom: 5px;
+	padding: 5px 20px;
+   
+}
+
+/* Homepage Testimonials */
+.caroufredsel_wrapper {
+	height: 350px !important;
+}
+#qua-testimonial .media-body{
+	float: left;
+	
+}
+
+/* Comment Section */
+.qua_comment_box .media-body, .qua_comment_box ul.children{
+	float: left;
+}		
+	
+} 
+
+
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+	.head-contact-info {
+	margin: 8px 0 10px;
+	text-align:center;
+	padding: 0px;
+	display: block;
+	float: none;
+	}
+	.head-contact-social{
+	float: none;
+	text-align:center;
+	margin: 0 0  5px;
+	padding: 0px;
+	}
+	.head-contact-social li {
+    height: 28px;
+		width: 28px;
+	}
+	.head-contact-social li > a > i {
+		font-size: 12px;
+		line-height: 1;
+	}
+	.qua_portfolio-column {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	margin-bottom:50px;
+	
+	}
+	.media-column {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	border-right: 0;
+	border-bottom: 1px solid #e5e5e5;
+	}
+	.qua_portfolio-2col-column {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	margin-bottom:100px;
+	}
+	.qua_portfolio-3col-column {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	margin-bottom:100px;
+	}
+	.qua_portfolio-4col-column {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	margin-bottom:100px;
+	}
+	
+	.qua_callout_area{
+	width:100%;
+	background-color:#f8504b;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-top:3px solid #e53a35;
+	border-bottom:3px solid #e53a35;
+	text-align:center;
+	}
+	.qua_callout_btn {
+	float: none;
+	
+	}
+	.qua-team-img{
+	padding-left:28%;
+	padding-right:25%;
+	float:none;
+	}
+	.qua-team-name{
+	text-align:center;
+	}
+	.qua-team-detail{
+	padding-right:15px;
+	padding-left:10px;
+	text-align:center;
+	}
+	.qua-team-social{
+	float: none;
+	text-align:center;
+	}
+/*Homepage Testimonial Pager*/	
+.testi-pager{
+	margin-top: 60px;
+}
+/*Menus Style*/
+	.navbar-toggle{
+		margin-top: 20px;
+	}
+	.navbar-nav > li:last-child {
+    margin-bottom: 15px;
+    margin-right: 0;
+	}
+	.navbar-nav > li > a {
+    border-radius: 0px;
+	}
+	.navbar-collapse.in {
+    overflow: hidden;
+	}
+/*Blog Page*/
+
+	.qua_post_date {
+    margin-bottom: 10px;
+	margin-left: 0;
+    margin-right: 2%;
+	}
+	.qua_post_title_wrapper {
+    width: 100%;
+	}
+	.qua-blog-area .qua-blog-info .qua-blog-date-cm .right {
+	float: left;
+	}
+	/*Sidebar Css*/
+	.qua-sidebar {
+		margin: 50px 0 0;
+	}
+	/*Callout Area */
+	.qua_callout_area {
+    padding: 20px 0;
+	}
+	
+/*Flex Slider Center Alignment*/
+.flex-slider-center h2 {
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0px 10% 5px;
+}
+.flex-slider-center span{ 
+	margin: 0px auto 5px;
+	padding: 0px 7px 3px 7px;
+	font-size: 16px;
+	line-height: 20px;
+}
+.flex-slider-center p{ 
+	padding: 0px 10px 0px 10px;
+    font-size: 11px;
+	line-height: 18px;
+    margin: 0px 10% 12px;
+}
+.flex_btn {
+    font-size: 9px;
+    line-height: 20px;
+    margin-bottom: 5px;
+	padding: 5px 10px;
+   
+}
+/* Homepage Testimonials */
+.caroufredsel_wrapper {
+	height: 500px !important;
+}
+#qua-testimonial .media-body{
+	float: left;
+	
+}
+/* Comment Section */
+.qua_comment_box .media-body {
+	float: left;
+}
+	
+	
+}
