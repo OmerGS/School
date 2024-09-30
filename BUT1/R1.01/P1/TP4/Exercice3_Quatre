@@ -1,0 +1,29 @@
+/**
+ * @author O.Gunes
+ **/
+class Exercice3 {
+    void principal() {
+        testEstParfait();
+    }
+
+    void testEstParfait() {
+        System.out.println("\n*** testEstParfait()");
+        estParfait(10);
+    }
+
+    void estParfait(int n) {
+        int sommeDiviseurs = 0;
+        boolean returnValeurs;
+        for (int i = 1; i <= n / 2; i++) {
+            if (n % i == 0) {
+                sommeDiviseurs += i;
+            }
+        }
+        if(sommeDiviseurs == n){
+			System.out.println(n + " est parfait ");
+		} else {
+			System.out.println(n + " n'est pas parfait ");
+		}
+	}
+}
+
