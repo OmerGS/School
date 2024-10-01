@@ -1,0 +1,13 @@
+Etudiant
+
++ void Etudiant | Ok
+- void initialisation | Ok
++ double moyenneMatiere | Ok
++ double moyenneGenerale() | Ok
++ void setNom | Ok
++ String getNom | Ok
++ int getNbMatieres | Ok
++ double getUneNote | Ok
++ String meilleureNote() | Non
+
++ toString() | Non
