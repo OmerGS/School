@@ -1,0 +1,11 @@
+S.R :
+
+-> Enseignant(idEns (1), nomEns, prenomEns)
+-> GroupeInfo1(idGroupe(1), tuteurGroupe = @Enseignant(prenomEns))
+
+-> Etudiant(idEtud(1), nomEtud, prenomEtud, sexe, bac, nomLycee, depLycee, leGroupeInfo1 = @GroupeInfo1(idGroupe), parcoursInfo2, formationInfo2, poursuiteEtudes)
+-> Entreprise(idEntreprise(1), nomEntreprise, depEntreprise)
+
+
+-> Stagiaire(etudStagiaire = @Etudiant(idEtud), entrepriseStage = @Entreprise(idEntreprise))
+-> Apprenti(etudApp = @Etudiant(idEtud), entrepriseApp = @Entreprise(idEntreprise), tuteurApp = @Enseignant(idEns))
