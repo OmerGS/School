@@ -1,0 +1,144 @@
+<mxGraphModel dx="1427" dy="805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="3" value="Aéroport" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=23;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+      <mxGeometry x="145" y="153" width="140" height="101" as="geometry"/>
+    </mxCell>
+    <mxCell id="4" value="nomAeroport : String (1)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3">
+      <mxGeometry y="23" width="140" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="5" value="numDepartement : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3">
+      <mxGeometry y="49" width="140" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="11" value="adresse : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3">
+      <mxGeometry y="75" width="140" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="14" value="communesBretonnes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=23;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+      <mxGeometry x="345" y="153" width="140" height="101" as="geometry"/>
+    </mxCell>
+    <mxCell id="15" value="departement : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="14">
+      <mxGeometry y="23" width="140" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="16" value="codeInsee : int (1)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="14">
+      <mxGeometry y="49" width="140" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="17" value="nomComunne : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="14">
+      <mxGeometry y="75" width="140" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="19" value="departement" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=23;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+      <mxGeometry x="535" y="158.5" width="160" height="75" as="geometry"/>
+    </mxCell>
+    <mxCell id="20" value="codeDepartement : int (1)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="19">
+      <mxGeometry y="23" width="160" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="21" value="nom : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="19">
+      <mxGeometry y="49" width="160" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="23" value="depenseCulturelleCommunes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=23;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+      <mxGeometry x="735" y="164.5" width="230" height="179" as="geometry"/>
+    </mxCell>
+    <mxCell id="24" value="annee : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="23">
+      <mxGeometry y="23" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="25" value="libelleGeographique : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="23">
+      <mxGeometry y="49" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="26" value="codeInsee : int (1)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="23">
+      <mxGeometry y="75" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="27" value="populationMunicipale : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="23">
+      <mxGeometry y="101" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="28" value="depenseCulturelle : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="23">
+      <mxGeometry y="127" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="29" value="budgetCommune : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="23">
+      <mxGeometry y="153" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="31" value="gare" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=23;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+      <mxGeometry x="135" y="304.5" width="230" height="205" as="geometry"/>
+    </mxCell>
+    <mxCell id="32" value="codeGare : int (1)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="31">
+      <mxGeometry y="23" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="33" value="nomGare : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="31">
+      <mxGeometry y="49" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="34" value="fret : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="31">
+      <mxGeometry y="75" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="35" value="voyageurs : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="31">
+      <mxGeometry y="101" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="36" value="nomCommunes : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="31">
+      <mxGeometry y="127" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="37" value="departement : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="31">
+      <mxGeometry y="153" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="38" value="codeCommune : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="31">
+      <mxGeometry y="179" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="40" value="investissementCulturelleDepartement" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=23;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+      <mxGeometry x="405" y="304.5" width="230" height="101" as="geometry"/>
+    </mxCell>
+    <mxCell id="41" value="codeInsee : int (1)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="40">
+      <mxGeometry y="23" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="42" value="annee : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="40">
+      <mxGeometry y="49" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="43" value="total : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="40">
+      <mxGeometry y="75" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="48" value="prixParCommunes" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=23;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+      <mxGeometry x="735" y="376.5" width="230" height="205" as="geometry"/>
+    </mxCell>
+    <mxCell id="49" value="codeInsee : int (1)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="48">
+      <mxGeometry y="23" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="50" value="annee : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="48">
+      <mxGeometry y="49" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="51" value="nbMaisonVendu : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="48">
+      <mxGeometry y="75" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="52" value="nbAppartVendu: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="48">
+      <mxGeometry y="101" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="53" value="prixMoyen : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="48">
+      <mxGeometry y="127" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="54" value="prixMetreCarreMoyen : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="48">
+      <mxGeometry y="153" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="55" value="surfaceMoyenne : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="48">
+      <mxGeometry y="179" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="56" value="tauxInflationParAn" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=23;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+      <mxGeometry x="405" y="451.5" width="230" height="75" as="geometry"/>
+    </mxCell>
+    <mxCell id="57" value="annee : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
+      <mxGeometry y="23" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="64" value="tauxInflation : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
+      <mxGeometry y="49" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="65" value="voisinnageCommune" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=23;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+      <mxGeometry x="135" y="588.5" width="230" height="127" as="geometry"/>
+    </mxCell>
+    <mxCell id="66" value="insee : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="65">
+      <mxGeometry y="23" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="67" value="nom : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="65">
+      <mxGeometry y="49" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="68" value="nbVoisin : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="65">
+      <mxGeometry y="75" width="230" height="26" as="geometry"/>
+    </mxCell>
+    <mxCell id="69" value="inseeVoisin : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="65">
+      <mxGeometry y="101" width="230" height="26" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

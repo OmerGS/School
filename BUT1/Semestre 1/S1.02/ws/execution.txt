@@ -1,0 +1,5 @@
+javac -d ../class ../src/plusGrandeSomme
+
+print("Compilé ! ");
+
+java Start plusGrandeSomme
