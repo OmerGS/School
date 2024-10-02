@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profil-info.css">
+
+    <title>Mes Informations - SporTrack</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            
+        </div>
+        <div class="titre">
+            <h1>SportTrack</h1>
+        </div>
+        <div class="bouton">
+            <button class="boutonFormulaire" type="button"><a href="index.html">Page d'Acceuil</a></button>
+            <button class="boutonFormulaireResponsive" type="button"><a href="index.html"><img src="/Image/7133312.png" height="30px" width="30px"></a></button>
+        </div>
+    </div>
+
+    <div class="centrerFormulaire">
+        <div class="formulaireTexte">
+            <h1>Vos Informations</h1>
+            <form action="Profil.html" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom"><br><br>
+                
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom"><br><br>
+                
+                <label for="dateNaissance">Date de Naissance :</label>
+                <input type="date" id="dateNaissance" name="dateNaissance"><br><br>
+                
+                <label for="sexe">Sexe :</label>
+                <select id="sexe" name="sexe">
+                    <option value="masculin">Masculin</option>
+                    <option value="feminin">Féminin</option>
+                    <option value="autre">Autre</option>
+                </select><br><br>
+                
+                <label for="taille">Taille (en cm) :</label>
+                <input type="number" id="taille" name="taille"><br><br>
+                
+                <label for="poids">Poids (en kg) :</label>
+                <input type="number" id="poids" name="poids"><br><br>
+                
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <button type="submit" class="buttonConnect">Sauvegarder</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p><a class="tos" href="tos.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

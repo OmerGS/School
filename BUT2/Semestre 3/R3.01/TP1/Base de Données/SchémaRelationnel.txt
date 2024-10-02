@@ -1,0 +1,3 @@
+Utilisateur(ID(1), Nom, Prénom, DateNaissance, Sexe, Taille, Poids, AdresseEmail, MotDePasse)
+Activité(ID(1), Date, Description, Temps, UtilisateurID(2), Distance)
+Données(ID(1), Temps, FreqCardiaque, Latitude, Longitude, Altitude, ActiviteID(2))

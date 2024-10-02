@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="view/user_add.css">
+    <title>Inscription - SporTrack</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            
+        </div>
+        <div class="titre">
+            <h1>SportTrack</h1>
+        </div>
+        <div class="bouton">
+            <button class="boutonFormulaire" type="button"><a href="/connect">Se connecter</a></button>
+            <button class="boutonFormulaire" type="button"><a href="/">Page d'Acceuil</a></button>
+            <button class="boutonFormulaireResponsive" type="button"><a href="index.html"><img src="view/Image/7133312.png" height="30px" width="30px"></a></button>
+        </div>
+    </div>
+
+    <div class="centrerFormulaire">
+        <div id="formulaireConnection">
+            <p class="formulaireTexte">Inscripion</p>
+            
+            <form action="/user_add" method="post">
+                <input type="text" name="nom" placeholder="Nom" class="inputFormulaire" required><br>
+                <input type="text" name="prénom" placeholder="Prénom" class="inputFormulaire" required><br>
+                <input type="date" name="dateNaissance" placeholder="Date de Naissance" class="inputFormulaire" required><br>
+                <p>
+                    <input type="radio" name="sexe" id="1" value="WOMAN" checked="checked"> <label>Féminin</label>
+                    <input type="radio" name="sexe" id="2" value="MAN" checked="checked"/> <label>Masculin</label>
+                </p>
+                <input type="number" name="taille" minlength="60" placeholder="Taille" class="inputFormulaire" required><br>
+                <input type="number" name="poids" minlength="20" placeholder="Poids" class="inputFormulaire" required><br>
+                <input type="email" name="mail" placeholder="E-mail" class="inputFormulaire" required><br>
+                <input type="password" name="password" placeholder="Password" minlength="8" class="inputFormulaire" required><br>
+                
+                <button type="submit" class="buttonConnect">S'inscrire</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

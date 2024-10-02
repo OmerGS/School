@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="view/connect.css">
+    <title>Connection - SporTrack</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            
+        </div>
+        <div class="titre">
+            <h1>SportTrack</h1>
+        </div>
+        <div class="bouton">
+            <button class="boutonFormulaire" type="button"><a href="/user_add">S'inscrire</a></button>
+            <button class="boutonFormulaire" type="button"><a href="/">Page d'Acceuil</a></button>
+            <button class="boutonFormulaireResponsive" type="button"><a href="/"><img src="/Image/7133312.png" height="30px" width="30px"></a></button>
+        </div>
+    </div>
+
+    <div class="centrerFormulaire">
+        <div id="formulaireConnection">
+            <p class="formulaireTexte">Se Connecter</p>
+
+            <form action="/connect" method="post">
+                <input type="email" name="mail" placeholder="E-mail" required class="inputFormulaire"><br>
+                <input type="password" name="password" placeholder="Password" required minlength="8" class="inputFormulaire"><br>
+                <button type="submit" class="buttonConnect">Se Connecter</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

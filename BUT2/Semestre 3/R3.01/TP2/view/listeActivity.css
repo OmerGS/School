@@ -1,0 +1,176 @@
+/* General Body Styles */
+body {
+    font-family: Nunito, Arial, sans-serif;
+    background-color: rgb(208, 224, 240);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    margin-top: -10px;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    flex-direction: row;
+    justify-content: end;
+    background-color: black;
+}
+
+.titre {
+    text-align: center;
+    color: snow;
+}
+
+.bouton {
+    margin-right: 10px;
+    display: flex;
+    width: 45%;
+    height: 100px;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+}
+
+.boutonFormulaire {
+    text-decoration: none;
+    margin-left: 60px;
+    color: white;
+    font-family: Nunito;
+    width: 110px;
+    height: 38px;
+    border: 2px solid white;
+    background-color: black;
+    transition: 0.5s;
+    border-radius: 12px / 24px;
+}
+
+.boutonFormulaire:hover {
+    transition: 0.5s;
+    width: 110px;
+    height: 50px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 12px / 24px;
+    text-decoration: none;
+}
+
+.boutonFormulaireResponsive {
+    visibility: hidden;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+.toggle-entries {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.toggle-entries:hover {
+    background-color: #005f7f;
+}
+
+.activity-entries {
+    background-color: #f9f9f9;
+    display: none;
+}
+
+.activity-entries div {
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Total Summary Styles */
+.total-summary {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center; /* Center text */
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.tos {
+    text-decoration: none;
+    color: white;
+}
+
+.tos:hover {
+    color: red;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 16px;
+    }
+
+    .toggle-entries {
+        padding: 8px 10px;
+    }
+
+    .boutonFormulaire {
+        visibility: hidden;
+    }
+
+    .boutonFormulaireResponsive {
+        visibility: visible;
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+        background-color: white;
+    }
+}
