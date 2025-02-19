@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/static/css/activities.css')
+    title Activités - SporTrack
+  body
+    .navbar
+      .logo
+      .titre
+        h1 SportTrack
+      .bouton
+        button.boutonFormulaire(type='button')
+          a(href='/') Page d&apos;Acceuil
+        button.boutonFormulaire(type='button')
+          a(href='/disconnect') Deconnexion
+        button.boutonFormulaireResponsive(type='button')
+          a(href='index.html')
+
+    #contenuPage
+      block content
+        h1 Activités de l'utilisateur
+        table
+          thead
+            tr
+              th Description
+              th Date
+              th Durée
+              th Distance
+              th Fréquence cardiaque min
+              th Fréquence cardiaque max
+              th Fréquence cardiaque moyenne
+          tbody
+            each activity in activities
+              tr
+                td= activity.description
+                td= activity.date instanceof Date ? activity.date.toISOString().split('T')[0] : activity.date
+                td= activity.duration
+                td= activity.distance
+                td= activity.heart_rate_min
+                td= activity.heart_rate_max
+                td= activity.heart_rate_avg
+
+    footer
+      p
+        a.tos(href='view/tos.html') Terms of Service

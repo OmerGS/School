@@ -1,0 +1,24 @@
+actor User as "Utilisateur"
+participant CarteFideliteWidget as "CarteFidelite"
+participant FlutterFlowAPICall as "API Call"
+participant FirebaseAuth as "Authentification Firebase"
+
+== Initialisation ==
+User -> CarteFidelite : Lance le Widget (initState)
+CarteFidelite -> CarteFidelite : Crée le modèle
+
+== Chargement des données ==
+CarteFidelite -> FirebaseAuth : Récupère currentUserEmail
+CarteFidelite -> FlutterFlowAPICall : Appelle l'API 'fidelityCard' avec adressemail
+FlutterFlowAPICall --> CarteFidelite : Retourne ApiCallResponse
+
+== Affichage de la carte de fidélité ==
+CarteFidelite -> CarteFidelite : Affiche le CircularProgressIndicator si les données ne sont pas encore reçues
+CarteFidelite -> CarteFidelite : Génère le widget une fois les données reçues
+CarteFidelite -> CarteFidelite : Affiche le code-barres (BarcodeWidget)
+
+== Action utilisateur ==
+User -> CarteFidelite : Appuie sur le bouton "Fermer"
+CarteFidelite -> CarteFidelite : Exécute context.pushNamed('Profil')
+CarteFidelite --> User : Redirige l'utilisateur vers "Profil"
+@enduml

@@ -1,0 +1,16 @@
+-> Augmentation/baisse de salaire limitée : Les contraintes ne peuvent comparer d'ancienne valeurs avec les nouvelles directement dans la création de table. 
+
+
+-> Un client ne peut pas être conseillé par un agent portant le même nom que lui : Une contrainte CHECK dans le script de création ne peut referencer une autre table.
+
+
+-> Un client ne doit pas pouvoir effectuer un retrait si le montant dépasse le solde : Cette contrainte nécessite une vérification dynamique du solde actuel d'un compte (via une requête sur la table Compte), ce qui n'est possible avec CHECK dans le script de création.
+
+
+-> Un client ne peut retirer de l'argent que sur un compte qui lui appartient : Raison : Cela implique une relation entre le client effectuant l'opération et les comptes qui lui sont associés, ce qui ne peut pas être géré par des contraintes qui sont dans le script de création.
+
+
+-> Une agence doit avoir un et un seul directeur : Raison : Cette contrainte implique une vérification de cardinalité (COUNT) sur les agents d'une même agence.
+
+
+-> Le directeur d'une agence doit être mieux payé que les autres agents de cette agence : Cette règle nécessite de comparer le salaire du directeur avec celui des autres agents de la même agence, ce qui implique des comparaisons entre les différentes insertions ce qui n'est possible par les contraintes dans le script de création de table.

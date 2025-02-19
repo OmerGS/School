@@ -1,0 +1,30 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='/static/css/connect.css')
+  title Connection - SporTrack
+.navbar
+  .logo
+  .titre
+    h1 SportTrack
+  .bouton
+    button.boutonFormulaire(type='button')
+      a(href='/users') S&apos;inscrire
+    button.boutonFormulaire(type='button')
+      a(href='/') Page d&apos;Acceuil
+    button.boutonFormulaireResponsive(type='button')
+      a(href='/')
+        img(src='/Image/7133312.png' height='30px' width='30px')
+.centrerFormulaire
+  #formulaireConnection
+    p.formulaireTexte Se Connecter
+    form(action='/connect/' method='post')
+      input.inputFormulaire(type='email' name='email' placeholder='E-mail' required='')
+      br
+      input.inputFormulaire(type='password' name='password' placeholder='Password' required='' minlength='8')
+      br
+      button.buttonConnect(type='submit') Se Connecter

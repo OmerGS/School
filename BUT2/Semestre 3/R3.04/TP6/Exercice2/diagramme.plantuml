@@ -1,0 +1,30 @@
+@startuml
+
+
+interface FileParser{
+    {abstract} parse(String filePath) : void 
+}
+
+abstract FileParserFactory{
+    {abstract} createParser() : FileParser
+}
+
+class ImageFileParserAdapter implements FileParser {
+    parse(String file): void
+}
+
+class TextFileParser implements FileParser {
+    parse(String file) : void
+}
+
+
+class PdfFileParser implements FileParser {
+    parse(String file) : void
+}
+
+class ImageExternal {
+    parse(String file) : void
+}
+
+
+@enduml

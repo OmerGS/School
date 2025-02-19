@@ -1,0 +1,28 @@
+use SignalGuard;
+DROP TABLE IF EXISTS User;
+DROP TABLE IF EXISTS API_KEY;
+DROP TABLE IF EXISTS Notification;
+
+
+CREATE TABLE User(
+	email VARCHAR(255) PRIMARY KEY,
+    password VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    surname VARCHAR(255) NOT NULL,
+    lastConnection TIMESTAMP
+);
+
+CREATE TABLE API_KEY (
+    email VARCHAR(255) PRIMARY KEY,
+    api_key VARCHAR(255) NOT NULL,
+    type VARCHAR(50) CHECK (type IN ('SMS', 'Mail')),
+    FOREIGN KEY (email) REFERENCES User(email)
+);
+
+CREATE TABLE Notification (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255),
+    message TEXT NOT NULL,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (email) REFERENCES User(email) ON DELETE CASCADE ON UPDATE CASCADE
+);

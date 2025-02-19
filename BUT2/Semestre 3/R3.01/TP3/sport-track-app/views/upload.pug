@@ -1,0 +1,34 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='static/css/upload.css')
+  title Profil - SporTrack
+.navbar
+  .logo
+  .titre
+    h1 SportTrack
+  .bouton
+    button.boutonFormulaire(type='button')
+      a(href='/') Page d&apos;Acceuil
+    button.boutonFormulaire(type='button')
+      a(href='/disconnect') Deconnexion
+    button.boutonFormulaireResponsive(type='button')
+      a(href='index.html')
+        img(src='/Image/7133312.png' height='30px' width='30px')
+#formulaireConnection
+  form(action='/upload' method='POST' enctype='multipart/form-data')
+    p(style='font-size: 25px') Televerser des donn&eacute;es
+    label(for='fichier') S&eacute;lectionnez un article
+    input#fichier(type='file' name='fichier' accept='.json')
+    input(type='submit' value='Envoyer le fichier')
+#formulaireConnection
+  form(action='/activities' method='POST' enctype='multipart/form-data')
+    p(style='font-size: 25px') Voir vos donn&eacute;es
+    input(type='submit' value='VOIR')
+footer
+  p
+    a.tos(href='view/tos.html') Terms of Service

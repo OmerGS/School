@@ -1,0 +1,9 @@
+name: testDartX.dart
+environment: 
+  sdk: '^3.5.0'
+dependencies:
+  test: ^1.25.8
+  dartx: any
+  crypto: ^3.0.6
+  build_web_compilers: ^4.0.4
+  build_runner: ^2.4.0

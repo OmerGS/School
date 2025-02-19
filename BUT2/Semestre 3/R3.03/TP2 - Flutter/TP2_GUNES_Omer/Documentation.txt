@@ -1,0 +1,8 @@
+L'application de rythme de musique est une application assez simple. L'objectif est que l'utilisateur devine la séquence aléatoire que l'application va jouer.
+
+L'application va donc jouer une séquence de notes aléatoires. L'objectifs de l'utilisateur est de refaire la séquence. Pour chaque note correcte l'utilisateur se verra attribuer des points. Il y a trois niveau de difficulté :
+- Facile : Séquence de 3 notes
+- Moyen : Séquence de 6 notes
+- Difficile : Séquence de 9 notes.
+
+La partie se termine lorsque l'utilisateur arrive à la fin de la séquence. Il va alors voir son nombre de notes devinés et va pouvoir recommencer une partie.

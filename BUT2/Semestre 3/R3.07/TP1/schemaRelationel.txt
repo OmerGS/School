@@ -1,0 +1,6 @@
+Operation(numOperation(1), dateOperation, typeOperation, montant, @Compte.numCompte (NN), @Client.numClient (NN))
+Compte(numCompte(1), solde, typeCompte)
+R([client=@Client.numClient, compte=@Compte.numCompte](1))
+Client(numClient(1), nomClient, prenomClient, adClient, dateNaissClient, @Agence.numAgence (NN), @Agent.numAgent (NN))
+Agent(numAgent(1), nomAgent, prenomAgent, salaire, estDirecteur, @Agence.numAgence (NN))
+Agence(numAgence(1), telAgence, adAgence)

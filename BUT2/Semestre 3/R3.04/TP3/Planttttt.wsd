@@ -1,0 +1,24 @@
+@startuml
+skinparam classAttributeIconSize 0
++class VendingMachine { 
+    -int balance
+    -state currentState
+    -int itemPrice
+    +VendingMachine(int itemPrice)
+    +insertMoney(int amount)
+    +dispenseItem()
+    +setOutOfOrder()
+    +resetMachine()
+    +displayState()
+}
+
+-enum State{
+    IDLE
+    WAITING_FOR_MONEY
+    DISPENSING_ITEM
+    OUT_OF_ORDER
+}
+
+State --+ VendingMachine
+
+@enduml

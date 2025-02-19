@@ -1,0 +1,632 @@
+@startuml
+    class LoginWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _LoginWidgetState {
+        -LoginModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        -Map<String, AnimationInfo> animationsMap
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class LoginModel {
+        +TabController? tabBarController
+        +TextEditingController? pseudoCreateTextController
+        +FocusNode? pseudoCreateFocusNode
+        +TextEditingController? emailAddressCreateTextController
+        +FocusNode? emailAddressCreateFocusNode
+        +TextEditingController? passwordCreateTextController
+        +FocusNode? passwordCreateFocusNode
+        +TextEditingController? passwordConfirmTextController
+        +FocusNode? passwordConfirmFocusNode
+        +TextEditingController? emailAddressTextController
+        +FocusNode? emailAddressFocusNode
+        +TextEditingController? passwordTextController
+        +FocusNode? passwordFocusNode
+        +void dispose()
+    }
+
+    class QuiSommeNousWidget {
+        +Key key
+        +State createState()
+    }
+
+    class UpdatePasswordWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _UpdatePasswordWidgetState {
+        -UpdatePasswordModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class UpdatePasswordModel {
+        +TextEditingController? passwordTextController
+        +FocusNode? textFieldFocusNode1
+        +TextEditingController? confirmPasswordTextController
+        +FocusNode? textFieldFocusNode2
+        +bool passwordVisibility1
+        +bool passwordVisibility2
+        +void dispose()
+    }
+
+    _UpdatePasswordWidgetState --> UpdatePasswordModel
+    _UpdatePasswordWidgetState --> Scaffold
+    _UpdatePasswordWidgetState --> GestureDetector
+    _UpdatePasswordWidgetState --> SafeArea
+    _UpdatePasswordWidgetState --> Column
+    _UpdatePasswordWidgetState --> TextFormField
+    _UpdatePasswordWidgetState --> FFButtonWidget
+    _UpdatePasswordWidgetState --> FlutterFlowTheme
+
+    class FFButtonWidget {
+        +void onPressed()
+        +String text
+        +FFButtonOptions options
+    }
+
+    class UpdateMailWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _UpdateMailWidgetState {
+        -UpdateMailModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class UpdateMailModel {
+        +TextEditingController? emailTextController
+        +FocusNode? textFieldFocusNode
+        +void dispose()
+    }
+
+    _UpdateMailWidgetState --> UpdateMailModel
+    _UpdateMailWidgetState --> Scaffold
+    _UpdateMailWidgetState --> GestureDetector
+    _UpdateMailWidgetState --> SafeArea
+    _UpdateMailWidgetState --> Column
+    _UpdateMailWidgetState --> TextFormField
+    _UpdateMailWidgetState --> FFButtonWidget
+    _UpdateMailWidgetState --> FlutterFlowTheme
+
+    _UpdateMailWidgetState --> FlutterFlowAPICall
+
+    class FlutterFlowAPICall {
+        +Future<void> updateEmail({String email, BuildContext context})
+    }
+
+    _UpdateMailWidgetState --> FFButtonWidget
+    _UpdateMailWidgetState --> FlutterFlowAPICall
+
+    _UpdateMailWidgetState --> GestureDetector
+    _UpdateMailWidgetState --> FlutterFlowTheme
+
+    UpdateMailWidget --> _UpdateMailWidgetState
+    _UpdateMailWidgetState --> UpdateMailModel
+
+    class FFButtonWidget {
+        +void onPressed()
+        +String text
+        +FFButtonOptions options
+    }
+
+    class FFButtonOptions {
+        +double width
+        +double height
+        +EdgeInsetsGeometry padding
+        +EdgeInsetsGeometry iconPadding
+        +Color color
+        +TextStyle textStyle
+        +double elevation
+        +BorderRadiusGeometry borderRadius
+    }
+
+    _UpdateMailWidgetState --> FFButtonWidget
+
+    class PhotothequeREVAWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _PhotothequeREVAWidgetState {
+        -PhotothequeREVAModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class PhotothequeREVAModel {
+        +void dispose()
+    }
+
+    class FlutterFlowTheme {
+        +static FlutterFlowTheme of(BuildContext context)
+        +Color primaryText
+        +Color secondaryBackground
+        +TextStyle headlineMedium
+        +TextStyle bodyMedium
+    }
+
+    class Scaffold {
+        +Key key
+        +Color backgroundColor
+        +Widget body
+    }
+
+    class SafeArea {
+        +Widget child
+    }
+
+    class Padding {
+        +EdgeInsetsGeometry padding
+        +Widget child
+    }
+
+    class Row {
+        +Widget child
+    }
+
+    class Column {
+        +List<Widget> children
+    }
+
+    class InkWell {
+        +void onTap()
+        +Widget child
+    }
+
+    class Icon {
+        +IconData icon
+        +Color color
+        +double size
+    }
+
+    class Text {
+        +String data
+        +TextStyle style
+    }
+
+    class GridView {
+        +EdgeInsetsGeometry padding
+        +SliverGridDelegate gridDelegate
+        +bool shrinkWrap
+        +Axis scrollDirection
+        +List<Widget> children
+    }
+
+    class Material {
+        +Color color
+        +double elevation
+        +ShapeBorder shape
+        +Widget child
+    }
+
+    class Container {
+        +Decoration decoration
+        +Widget child
+    }
+
+    class BoxDecoration {
+        +Color color
+        +BorderRadiusGeometry borderRadius
+    }
+
+    class ClipRRect {
+        +BorderRadiusGeometry borderRadius
+        +Widget child
+    }
+
+    class Image {
+        +String url
+        +double width
+        +double height
+        +BoxFit fit
+    }
+
+    class EdgeInsetsDirectional {
+        +static EdgeInsetsGeometry fromSTEB(double start, double top, double end, double bottom)
+    }
+
+    class SizedBox {
+        +double height
+    }
+
+    PhotothequeREVAWidget --> _PhotothequeREVAWidgetState
+    _PhotothequeREVAWidgetState --> PhotothequeREVAModel
+    _PhotothequeREVAWidgetState --> Scaffold
+    _PhotothequeREVAWidgetState --> GestureDetector
+    _PhotothequeREVAWidgetState --> SafeArea
+    _PhotothequeREVAWidgetState --> Padding
+    _PhotothequeREVAWidgetState --> Column
+    _PhotothequeREVAWidgetState --> GridView
+    _PhotothequeREVAWidgetState --> Material
+    _PhotothequeREVAWidgetState --> InkWell
+    _PhotothequeREVAWidgetState --> Icon
+    _PhotothequeREVAWidgetState --> Text
+    _PhotothequeREVAWidgetState --> Image
+
+    GridView --> Material
+    Material --> ClipRRect
+    ClipRRect --> Image
+
+    class SliverGridDelegate {
+        +SliverGridDelegateWithFixedCrossAxisCount(
+            int crossAxisCount,
+            double crossAxisSpacing,
+            double mainAxisSpacing,
+            double childAspectRatio
+        )
+    }
+
+    class PhotothequeREVAWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _PhotothequeREVAWidgetState {
+        -PhotothequeREVAModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class PhotothequeREVAModel {
+        +void dispose()
+    }
+
+    class PhotohequeFeteEnfantWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _PhotohequeFeteEnfantWidgetState {
+        -PhotohequeFeteEnfantModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class PhotohequeFeteEnfantModel {
+        +void dispose()
+    }
+
+    class FlutterFlowTheme {
+        +static FlutterFlowTheme of(BuildContext context)
+        +Color primaryText
+        +Color secondaryBackground
+        +TextStyle headlineMedium
+        +TextStyle bodyMedium
+    }
+
+    class Scaffold {
+        +Key key
+        +Color backgroundColor
+        +Widget body
+    }
+
+    class SafeArea {
+        +Widget child
+    }
+
+    class Padding {
+        +EdgeInsetsGeometry padding
+        +Widget child
+    }
+
+    class Row {
+        +Widget child
+    }
+
+    class Column {
+        +List<Widget> children
+    }
+
+    class InkWell {
+        +void onTap()
+        +Widget child
+    }
+
+    class Icon {
+        +IconData icon
+        +Color color
+        +double size
+    }
+
+    class Text {
+        +String data
+        +TextStyle style
+    }
+
+    class GridView {
+        +EdgeInsetsGeometry padding
+        +SliverGridDelegate gridDelegate
+        +bool shrinkWrap
+        +Axis scrollDirection
+        +List<Widget> children
+    }
+
+    class Material {
+        +Color color
+        +double elevation
+        +ShapeBorder shape
+        +Widget child
+    }
+
+    class Container {
+        +Decoration decoration
+        +Widget child
+    }
+
+    class BoxDecoration {
+        +Color color
+        +BorderRadiusGeometry borderRadius
+    }
+
+    class ClipRRect {
+        +BorderRadiusGeometry borderRadius
+        +Widget child
+    }
+
+    class Image {
+        +String url
+        +double width
+        +double height
+        +BoxFit fit
+    }
+
+    class EdgeInsetsDirectional {
+        +static EdgeInsetsGeometry fromSTEB(double start, double top, double end, double bottom)
+    }
+
+    class SizedBox {
+        +double height
+    }
+
+    PhotothequeREVAWidget --> _PhotothequeREVAWidgetState
+    _PhotothequeREVAWidgetState --> PhotothequeREVAModel
+    _PhotothequeREVAWidgetState --> Scaffold
+    _PhotothequeREVAWidgetState --> GestureDetector
+    _PhotothequeREVAWidgetState --> SafeArea
+    _PhotothequeREVAWidgetState --> Padding
+    _PhotothequeREVAWidgetState --> Column
+    _PhotothequeREVAWidgetState --> GridView
+    _PhotothequeREVAWidgetState --> Material
+    _PhotothequeREVAWidgetState --> InkWell
+    _PhotothequeREVAWidgetState --> Icon
+    _PhotothequeREVAWidgetState --> Text
+    _PhotothequeREVAWidgetState --> Image
+
+    PhotohequeFeteEnfantWidget --> _PhotohequeFeteEnfantWidgetState
+    _PhotohequeFeteEnfantWidgetState --> PhotohequeFeteEnfantModel
+    _PhotohequeFeteEnfantWidgetState --> Scaffold
+    _PhotohequeFeteEnfantWidgetState --> GestureDetector
+    _PhotohequeFeteEnfantWidgetState --> SafeArea
+    _PhotohequeFeteEnfantWidgetState --> Padding
+    _PhotohequeFeteEnfantWidgetState --> Column
+    _PhotohequeFeteEnfantWidgetState --> GridView
+    _PhotohequeFeteEnfantWidgetState --> Material
+    _PhotohequeFeteEnfantWidgetState --> InkWell
+    _PhotohequeFeteEnfantWidgetState --> Icon
+    _PhotohequeFeteEnfantWidgetState --> Text
+    _PhotohequeFeteEnfantWidgetState --> Image
+
+    GridView --> Material
+    Material --> ClipRRect
+    ClipRRect --> Image
+
+    class SliverGridDelegate {
+        +SliverGridDelegateWithFixedCrossAxisCount(
+            int crossAxisCount,
+            double crossAxisSpacing,
+            double mainAxisSpacing,
+            double childAspectRatio
+        )
+    }
+
+
+    class FFButtonOptions {
+        +double width
+        +double height
+        +EdgeInsetsGeometry padding
+        +EdgeInsetsGeometry iconPadding
+        +Color color
+        +TextStyle textStyle
+        +double elevation
+        +BorderRadiusGeometry borderRadius
+    }
+
+    _UpdatePasswordWidgetState --> FFButtonWidget
+    _UpdatePasswordWidgetState --> FlutterFlowAPICall
+
+    class FlutterFlowAPICall {
+        +Future<void> updatePassword({String newPassword, BuildContext context})
+    }
+
+
+    class _QuiSommeNousWidgetState {
+        -QuiSommeNousModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class QuiSommeNousModel {
+        +void dispose()
+    }
+
+    class HomepageWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _HomepageWidgetState {
+        -HomepageModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class HomepageModel {
+        +void dispose()
+    }
+
+    class ProfilWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _ProfilWidgetState {
+        -ProfilModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class ProfilModel {
+        +void dispose()
+    }
+
+    class CarteFideliteWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _CarteFideliteWidgetState {
+        -CarteFideliteModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class CarteFideliteModel {
+        +void dispose()
+    }
+
+    class AchatEffectueWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _AchatEffectueWidgetState {
+        -AchatEffectueModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class AchatEffectueModel {
+        +void dispose()
+    }
+
+    class AnimationInfo {
+        +AnimationTrigger trigger
+        +Function effectsBuilder()
+    }
+
+    enum AnimationTrigger {
+        onPageLoad
+    }
+
+    class ConseilAdministrationWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _ConseilAdministrationWidgetState {
+        -ConseilAdministrationModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class ConseilAdministrationModel {
+        +void dispose()
+    }
+
+    class ForgotPasswordWidget {
+        +Key key
+        +State createState()
+    }
+
+    class _ForgotPasswordWidgetState {
+        -ForgotPasswordModel _model
+        -GlobalKey<ScaffoldState> scaffoldKey
+        +void initState()
+        +void dispose()
+        +Widget build(BuildContext context)
+    }
+
+    class ForgotPasswordModel {
+        +TextEditingController? emailAddressTextController
+        +FocusNode? emailAddressFocusNode
+        +void dispose()
+    }
+
+    QuiSommeNousWidget --> _QuiSommeNousWidgetState
+    _QuiSommeNousWidgetState --> QuiSommeNousModel
+
+    _LoginWidgetState --> Scaffold
+    _LoginWidgetState --> FlutterFlowAPICall
+    _LoginWidgetState --> FutureBuilder
+    _LoginWidgetState --> GestureDetector
+    _LoginWidgetState --> SafeArea
+    _LoginWidgetState --> SingleChildScrollView
+    _LoginWidgetState --> Column
+    _LoginWidgetState --> Text
+    _LoginWidgetState --> Material
+    _LoginWidgetState --> FlutterFlowAPICall
+
+    ProfilWidget --> _ProfilWidgetState
+    _ProfilWidgetState --> ProfilModel
+
+    HomepageWidget --> _HomepageWidgetState
+    _HomepageWidgetState --> HomepageModel
+
+    LoginWidget --> _LoginWidgetState
+    _LoginWidgetState --> LoginModel
+
+    CarteFideliteWidget --> _CarteFideliteWidgetState
+    _CarteFideliteWidgetState --> CarteFideliteModel
+
+    AchatEffectueWidget --> _AchatEffectueWidgetState
+    _AchatEffectueWidgetState --> AchatEffectueModel
+
+    ConseilAdministrationWidget --> _ConseilAdministrationWidgetState
+    _ConseilAdministrationWidgetState --> ConseilAdministrationModel
+
+    AnimationInfo --> AnimationTrigger
+
+    _AchatEffectueWidgetState --> Scaffold
+    _AchatEffectueWidgetState --> FutureBuilder
+    _AchatEffectueWidgetState --> GestureDetector
+    _AchatEffectueWidgetState --> SafeArea
+    _AchatEffectueWidgetState --> SingleChildScrollView
+    _AchatEffectueWidgetState --> Column
+    _AchatEffectueWidgetState --> Text
+    _AchatEffectueWidgetState --> Material
+    _AchatEffectueWidgetState --> FlutterFlowAPICall
+
+    ForgotPasswordWidget --> _ForgotPasswordWidgetState
+    _ForgotPasswordWidgetState --> ForgotPasswordModel
+@enduml

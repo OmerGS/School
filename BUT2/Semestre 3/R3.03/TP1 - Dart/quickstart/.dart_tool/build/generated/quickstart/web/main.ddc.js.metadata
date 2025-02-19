@@ -1,0 +1,1 @@
+{"version":"1.0.2","name":"web/main","closureName":"load__web__main","sourceMapUri":"web/main.ddc.js.map","moduleUri":"web/main.ddc.js","fullDillUri":"web/main.ddc.full.dill","libraries":[{"name":"main","importUri":"org-dartlang-app:///web/main.dart","fileUri":"/web/main.dart","partUris":[]}],"soundNullSafety":true}

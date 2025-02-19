@@ -1,0 +1,209 @@
+body{
+    font-family: Nunito;
+    text-decoration: none;
+}
+
+.navbar{
+    margin-top: -10px;
+    display:flex;
+    width: 100%;
+    height: 100px;
+    flex-direction:row;
+    justify-content: end;
+    background-color: black;
+}
+
+.titre{
+    text-align: center;
+    color: snow;
+}
+
+.bouton{
+    margin-right: 10px;
+    display: flex;
+    width: 45%;
+    height: 100px;
+    flex-direction:row-reverse;
+    justify-content:end ;
+    align-items: center;
+}
+
+.boutonFormulaire{
+    text-decoration: none;
+    margin-left: 60px;
+    color: white;
+    font-family: Nunito;
+    width: 110px;
+    height: 38px;
+    border: 2px solid white;
+    background-color: black;
+    transition: 0.5s;
+    -webkit-border-radius: 12px / 24px;
+    -moz-border-radius:    12px / 24px; 
+    border-radius:         12px / 24px; 
+}
+
+.boutonFormulaire:hover {
+    transition: 0.5s;
+    width: 110px;
+    height: 50px;
+    background-color: white;
+    border: 5px solid white;
+    -webkit-border-radius: 12px / 24px;
+    -moz-border-radius:    12px / 24px; 
+    border-radius:         12px / 24px; 
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:black;
+}
+
+
+#contenu-principal1{ /*PREMIER CONTENU*/
+    margin-top: -15px;
+    height: 500px;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#contenu-principal2 {
+    background: linear-gradient(214deg, rgb(139, 131, 255), rgb(245, 179, 179));
+    background-size: 400% 400%;
+    margin-top: -15px;
+    height: 500px;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    -webkit-animation: AnimationName2 3.5s ease infinite;
+    -moz-animation: AnimationName2 3.5s ease infinite;
+    -o-animation: AnimationName2 3.5s ease infinite;
+    animation: AnimationName2 3.5s ease infinite;
+
+
+@-webkit-keyframes AnimationName2 {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-moz-keyframes AnimationName2 {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-o-keyframes AnimationName2 {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@keyframes AnimationName2 {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+}
+
+#contenu-principal3 {
+    background: linear-gradient(214deg, rgb(255, 225, 156), rgb(193, 198, 126));
+    background-size: 400% 400%;
+    margin-top: -15px;
+    height: 500px;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    -webkit-animation: AnimationName3 3.5s ease infinite;
+    -moz-animation: AnimationName3 3.5s ease infinite;
+    -o-animation: AnimationName3 3.5s ease infinite;
+    animation: AnimationName3 3.5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName3 {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-moz-keyframes AnimationName3 {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-o-keyframes AnimationName3 {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@keyframes AnimationName3 {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+
+#contenu-principal1 {
+    background: linear-gradient(214deg, rgb(195, 255, 157), rgb(207, 255, 193));
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 3.5s ease infinite;
+    -moz-animation: AnimationName 3.5s ease infinite;
+    -o-animation: AnimationName 3.5s ease infinite;
+    animation: AnimationName 3.5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:94% 0%}
+    50%{background-position:7% 100%}
+    100%{background-position:94% 0%}
+}
+
+.text{
+    text-align: center;
+    color: black;
+}
+
+.textPresentation{
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align :center;
+}
+
+.tos{
+    text-decoration: none;
+    color: white;
+}
+
+.tos:hover{
+    color: red;
+}

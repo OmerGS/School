@@ -1,0 +1,154 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: 'Nunito', sans-serif; /* Assurez-vous que la police Nunito est chargée */
+    background-color: rgb(208, 224, 240); /* Couleur de fond douce */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center; /* Centre le titre */
+    color: #333; /* Couleur du texte */
+    margin-bottom: 30px; /* Espace en dessous du titre */
+}
+
+/* Style du tableau */
+table {
+    width: 100%; /* Table prend toute la largeur */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
+    margin: 0 auto; /* Centre la table */
+    background-color: white; /* Couleur de fond de la table */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+/* Style des en-têtes de tableau */
+thead {
+    background-color: #007BFF; /* Couleur de fond des en-têtes */
+    color: white; /* Couleur du texte des en-têtes */
+}
+
+th, td {
+    padding: 12px; /* Espace à l'intérieur des cellules */
+    text-align: left; /* Aligne le texte à gauche */
+    border-bottom: 1px solid #ddd; /* Ligne de séparation entre les lignes */
+}
+
+/* Style pour les cellules du corps */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Change de couleur au survol */
+}
+
+/* Style pour les cellules vides ou nulles */
+td {
+    color: #666; /* Couleur des cellules */
+}
+
+/* Réduction de la taille des cellules */
+th:nth-child(n+2), td:nth-child(n+2) {
+    text-align: center; /* Centre les valeurs des colonnes spécifiques */
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    margin-top: -10px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    height: 100px;
+}
+
+/* Titre de la barre de navigation */
+.titre {
+    text-align: center;
+    color: snow;
+}
+
+/* Style des boutons */
+.bouton {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.boutonFormulaire {
+    text-decoration: none;
+    color: white;
+    font-family: Nunito;
+    width: 110px;
+    height: 38px;
+    border: 2px solid white;
+    background-color: black;
+    transition: 0.5s;
+    border-radius: 12px;
+}
+
+.boutonFormulaire:hover {
+    width: 110px;
+    height: 50px;
+    background-color: white;
+    border: 5px solid white;
+}
+
+/* Responsiveness pour les petits écrans */
+@media screen and (max-width: 767px) {
+    .boutonFormulaire {
+        visibility: hidden;
+    }
+
+    .boutonFormulaireResponsive {
+        visibility: visible;
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+        background-color: white;
+        transition: 0.5s;
+    }
+}
+
+/* Formulaire et input */
+.inputFormulaire {
+    padding: 3px;
+    margin: 3px;
+    border-radius: 12px;
+}
+
+.inputFormulaire:focus {
+    border: 3.5px solid greenyellow;
+    background-color: white;
+    transform: scale(1.02);
+}
+
+.buttonConnect {
+    background-color: black;
+    color: aliceblue;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.buttonConnect:hover {
+    transform: scale(1.2);
+    box-shadow: inset 0 0 1em black, 0 0 1em black;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Styles pour les liens */
+.tos {
+    text-decoration: none;
+    color: white;
+}
+
+.tos:hover {
+    color: red;
+}

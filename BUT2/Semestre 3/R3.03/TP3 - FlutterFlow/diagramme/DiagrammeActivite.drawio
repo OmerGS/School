@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0" version="25.0.3">
+  <diagram name="Page-1" id="R1nXEO5J9N-F3cgjoqKn">
+    <mxGraphModel dx="568" dy="286" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-1" value="Base de données (MySQL)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=58;" vertex="1" parent="1">
+          <mxGeometry x="32" y="30" width="1105" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-2" value="API" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="32" y="220" width="1105" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-3" value="Utilisateur (Application)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="32" y="400" width="1115" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-5" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="UEz8NMtgIa_IVA6mQeP3-3">
+          <mxGeometry x="38" y="75" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="UEz8NMtgIa_IVA6mQeP3-3" source="UEz8NMtgIa_IVA6mQeP3-5" target="UEz8NMtgIa_IVA6mQeP3-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="208" y="110" as="sourcePoint" />
+            <mxPoint x="128" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-9" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="UEz8NMtgIa_IVA6mQeP3-3">
+          <mxGeometry x="118" y="75" width="52" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-11" value="Inscription" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="UEz8NMtgIa_IVA6mQeP3-3">
+          <mxGeometry x="198" y="35" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-12" value="Connexion" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="UEz8NMtgIa_IVA6mQeP3-3">
+          <mxGeometry x="198" y="125" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="UEz8NMtgIa_IVA6mQeP3-3" source="UEz8NMtgIa_IVA6mQeP3-9" target="UEz8NMtgIa_IVA6mQeP3-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="178" y="120" as="sourcePoint" />
+            <mxPoint x="228" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="UEz8NMtgIa_IVA6mQeP3-3" source="UEz8NMtgIa_IVA6mQeP3-9" target="UEz8NMtgIa_IVA6mQeP3-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="178" y="120" as="sourcePoint" />
+            <mxPoint x="228" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UEz8NMtgIa_IVA6mQeP3-4" value="Base de données Firebase" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=58;" vertex="1" parent="1">
+          <mxGeometry x="32" y="640" width="1105" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

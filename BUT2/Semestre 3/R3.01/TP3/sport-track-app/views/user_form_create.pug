@@ -1,0 +1,45 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='/static/css/connection.css')
+  title Inscription - SporTrack
+.navbar
+  .logo
+  .titre
+    h1 SportTrack
+  .bouton
+    button.boutonFormulaire(type='button')
+      a(href='/connect') Se connecter
+    button.boutonFormulaire(type='button')
+      a(href='/') Page d&apos;Acceuil
+    button.boutonFormulaireResponsive(type='button')
+      a(href='index.html')
+        img(src='view/Image/7133312.png' height='30px' width='30px')
+.centrerFormulaire
+  #formulaireConnection
+    p.formulaireTexte Inscription
+    form(action='/users/' method='post')
+      input.inputFormulaire(type='text' name='lastname' placeholder='Nom' required='')
+      br
+      input.inputFormulaire(type='text' name='firstname' placeholder='Prénom' required='')
+      br
+      input.inputFormulaire(type='date' name='birthdate' placeholder='Date de Naissance' required='')
+      br
+      p
+        input#1(type='radio' name='gender' value='WOMAN' checked='checked')
+        label F&eacute;minin
+        input#2(type='radio' name='gender' value='MAN')
+        label Masculin
+      input.inputFormulaire(type='number' name='height' placeholder='Taille (en cm)' required='')
+      br
+      input.inputFormulaire(type='number' name='weight' placeholder='Poids (en kg)' required='')
+      br
+      input.inputFormulaire(type='email' name='email' placeholder='E-mail' required='')
+      br
+      input.inputFormulaire(type='password' name='password' placeholder='Mot de passe' minlength='8' required='')
+      br
+      button.buttonConnect(type='submit') S&apos;inscrire

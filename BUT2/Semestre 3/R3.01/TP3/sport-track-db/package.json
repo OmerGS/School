@@ -1,0 +1,16 @@
+{
+  "name": "sport-track-db",
+  "version": "1.0.0",
+  "description": "Database for SportTrack Web Application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "sport-track-db-test.js"
+  },
+  "dependencies": {
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  },
+  "author": "GUNES Omer",
+  "license": "ISC"
+}

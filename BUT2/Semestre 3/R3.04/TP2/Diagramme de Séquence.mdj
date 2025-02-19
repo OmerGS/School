@@ -1,0 +1,176 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAGTd3yuSgkNSKM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 120,
+							"top": 112,
+							"width": 184,
+							"height": 40
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGTd3z65QkTXe8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 208,
+							"top": 248,
+							"width": 60,
+							"height": 15
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGTd30KOAkWqx8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;17;0",
+							"parentStyle": false,
+							"left": 160,
+							"top": 120,
+							"width": 100,
+							"height": 29,
+							"text": "Main",
+							"horzAlign": 2,
+							"vertAlign": 4
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGTd32qRQkkznA=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"lineStyle": 1,
+							"points": "208:704;208:152"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGTd38g4gksuM8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;17;0",
+							"parentStyle": false,
+							"left": 475,
+							"top": 122,
+							"width": 100,
+							"height": 29,
+							"text": "Main",
+							"horzAlign": 2,
+							"vertAlign": 4
+						},
+						{
+							"_type": "RectangleView",
+							"_id": "AAAAAAGTd38g4gkto+8=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 435,
+							"top": 114,
+							"width": 184,
+							"height": 40
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGTd388IwkzpAY=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;17;0",
+							"parentStyle": false,
+							"left": 472,
+							"top": 120,
+							"width": 100,
+							"height": 29,
+							"text": "library",
+							"horzAlign": 2,
+							"vertAlign": 4
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGTd3+mawk/Gpw=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"lineStyle": 1,
+							"points": "512:152;512:704"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGTd4OgdwlNq8M=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 320,
+							"top": 192,
+							"width": 100,
+							"height": 25,
+							"text": "new Library();"
+						},
+						{
+							"_type": "FreelineEdgeView",
+							"_id": "AAAAAAGTd4SLKAlUwOM=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"lineStyle": 1,
+							"points": "208:224;512:224"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AAAAAAGTd4WdBAlpn/Q=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;20;0",
+							"parentStyle": false,
+							"left": 432,
+							"top": 224,
+							"width": 32,
+							"height": 32,
+							"text": "->"
+						}
+					]
+				}
+			]
+		}
+	]
+}

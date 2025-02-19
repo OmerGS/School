@@ -1,0 +1,11 @@
+Ceci est un test de la commande `cat` ! 🎉
+
+# Voici une info :
+Voici Konrad Adenauer, le 1er chancelier allemand après la Seconde Guerre mondiale. Chancelier de 1949 à 1965, il faisait partie du parti chrétien-démocrate. Il est né le 5 janvier 1876 à Cologne et est mort le 19 avril 1967 après une vie marquée par son anti-communisme et son anti-nazisme.
+
+# Note pour le prof :
+Merci d'avoir testé la commande `cat`. Si vous avez apris des choses, nous acceptons les points supplémentaires.
+
+# Remerciements :
+- Aux 10 verres de café
+- Aux algorithmes de statistiques arbitraire.

@@ -1,0 +1,75 @@
+@startuml
+
+interface UserState{
+    + {abstract} handle(NotificationStrategy strategy, String message) : void
+}
+
+class ConnectedState{
+    + handle(NotificationStrategy strategy, String message) : void
+}
+class DisconnectedState{
+    + handle(NotificationStrategy strategy, String message) : void
+}
+class DoNotDisturbState{
+    + handle(NotificationStrategy strategy, String message) : void
+}
+
+interface NotificationStrategy{
+    + sendNotification(String message,boolean critique) : void
+}
+
+
+
+
+
+interface NotificationStrategy{
+    + {abstract} sendNotification(String message, boolean critique) : void
+}
+
+class EmailNotification{
+    + sendNotification(String message,boolean critique) : void
+}
+
+class PushNotification{
+    + sendNotification(String message,boolean critique) : void
+}
+
+class SMSNotification{
+    + sendNotification(String message,boolean critique) : void
+}
+
+class NullNotification{
+    + sendNotification(String message,boolean critique) : void
+}
+
+
+
+
+
+class NotificationService{
+    private UserState state
+
+    public NotificationService(UserState state){
+        this.state = state;
+    }
+
+    public void setState(UserState state){
+        this.state = state;
+    }
+
+    public void handle(NotificationStrategy strat, String message){
+        state.handle(strat,message);
+    }
+}
+
+
+EmailNotification --|> NotificationStrategy
+PushNotification --|> NotificationStrategy
+SMSNotification --|> NotificationStrategy
+NullNotification --|> NotificationStrategy
+
+ConnectedState --|> UserState
+DisconnectedState --|> UserState
+DoNotDisturbState --|> UserState
+
+@enduml
